@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+
+    grid-template-areas: 
+    "header header header"
+    "header header header"
+    "header header header"
+    "menu-l timeline menu-r"
+    "menu-l timeline menu-r"
+    "menu-l timeline menu-r"
+    "menu-l timeline menu-r"
+    "menu-l timeline menu-r"
+    "menu-l timeline menu-r"
+    "menu-l timeline menu-r"
+    "menu-l timeline menu-r"
+    "menu-l timeline menu-r"
+    ;
+;
+}
+
+#header {
+    grid-area: header;
+    background-color: red;
+    width: 100%;
+    height: ;
+}
+
+#menu-l {
+    grid-area: menu-l;
+    background-color: green;
+}
+
+#content {
+    grid-area: timeline;
+    background-color: yellow;
+}
+
+#menu-r {
+    grid-area: menu-r;
+    background-color: blue;
+}
